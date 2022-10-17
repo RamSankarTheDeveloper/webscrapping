@@ -1,14 +1,14 @@
-note:additional libraries you might need to install for it to work
-  1. beautifulsoup4
-  2. sqlite3
-  3. requests
+# webscrapping
 
-working:
-  Automatically scrapes all item listed webpages in the same order as listed. Run main.py in your IDE. Scraped data is saved as   storage_data.db on the same directory of your code, in table format
+  > Run main.py in your IDE. Automatically scrapes each item-listed-webpage in the same order as listed in the website in an interval timer of 5 seconds. Scraped data is saved in 'storage_data.db' on the same directory of your code, in table format
+
+**additional libraries you might need to install for it to work -- beautifulsoup4, --regex, -- requests>**
+
+The scrapping starts here:[ ebay/computer printers](https://www.ebay.com/b/Computer-Printers/1245/bn_320031)
 
 program settings:
-  - limit can be edited using while loop limit
-  - change webpage "class_=" if you are looking for items other than printers
+  - number of webpages scrapped depends on while loop limit
+  - edit 'class_=', intital url if you want to search items other than printers
 
 Languages:
   - python
@@ -16,7 +16,7 @@ Languages:
   - Regex
 
 Libraries used:
-  - inception noise BeautifulSoup
+  - BeautifulSoup
   - sqlite3
   - requests
   - regex
